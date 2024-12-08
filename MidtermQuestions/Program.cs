@@ -6,81 +6,54 @@ class Program
     {
         Console.Write("Please enter your name: ");
         string playerName = Console.ReadLine();
-        Console.WriteLine($"Hello, {playerName}! You open your eyes. The last thing you remember is being knocked unconscious by a blow to your head from a large man. You are in a dark room and hear sounds...");
-        Console.WriteLine("What will you do?\n");
-        Console.WriteLine("1. Head towards the door.");
-        Console.WriteLine("2. Search the room.");
-        Console.WriteLine("3. Stay in bed and wait quietly.");
-        Console.Write("Make your choice (1-3): ");
-        string choice1 = Console.ReadLine();
+        Console.WriteLine($"Hello, {playerName}! You open your eyes. The last thing you remember is being knocked unconscious by a blow to your head from a large man. You are in a dark room and hear sounds...\"");
 
-        if (choice1 == "1")
+        Console.WriteLine("The questions are starting.");
+        
+        Console.WriteLine("Question 1: Do you head towards the door? (Yes / No)");
+        string choice1 = Console.ReadLine().ToLower();
+
+        Console.WriteLine("Question 2: Do you search the room? (Yes / No)");
+        string choice2 = Console.ReadLine().ToLower();
+
+        Console.WriteLine("Question 3: Do you take the knife you saw while looking around the room? (Yes / No)");
+        string choice3 = Console.ReadLine().ToLower();
+
+        Console.WriteLine("Question 4: Are you determined to escape this unknown place no matter what? (Yes / No)");
+        string choice4 = Console.ReadLine().ToLower();
+        
+        if (choice1 == "yes" && choice2 == "yes" && choice3 == "yes" && choice4 == "yes")
         {
-            Console.WriteLine($"You approach the door, {playerName}. The door is locked, but you can try to open it with the bobby pin in your hair. Do you take the pin and try to unlock the door?");
-            Console.WriteLine("1. Yes, use the bobby pin.");
-            Console.WriteLine("2. No, turn back..");
-            Console.Write("Make your choice (1-2): ");
-            string choice2 = Console.ReadLine();
-
-            if (choice2 == "1")
-            {
-                Console.WriteLine($"You open the door and step into the hallway, {playerName}. However, at the end of the hallway, you encounter the man who knocked you unconscious! Will you try to run away, or will you hide somewhere else in the house?");
-                Console.WriteLine("1. Try to run away..");
-                Console.WriteLine("2. Hide somewhere else.");
-                Console.Write("Make your choice (1-2): ");
-                string choice3 = Console.ReadLine();
-
-                if (choice3 == "1")
-                {
-                    Console.WriteLine($"You run, but the killer catches you. This is your end., {playerName}...");
-                }
-                else
-                {
-                    Console.WriteLine($"You hide in a closet, {playerName}. The killer can't find you and walks away. You manage to escape quietly. Congratulations!");
-                }
-            }
-            else
-            {
-                Console.WriteLine($"You return to the room, and the sounds find you, {playerName}. This is your end...");
-            }
+            Console.WriteLine($"You encounter the killer, {playerName}. Using the knife, you neutralize the killer and manage to escape him but his partner caught you.!");
         }
-        else if (choice1 == "2")
+        else if (choice1 == "yes" && choice2 == "yes" && choice3 == "yes")
         {
-            Console.WriteLine($"You search the room and find a knife, {playerName}. Do you take the knife and head towards the door?");
-            Console.WriteLine("1. Yes, head towards the door.");
-            Console.WriteLine("2. No, leave the knife and continue searching the room..");
-            Console.Write("Make your choice (1-2): ");
-            string choice2 = Console.ReadLine();
-
-            if (choice2 == "1")
-            {
-                Console.WriteLine($"You head towards the door, {playerName}. You come face to face with the killer. Do you use the knife?");
-                Console.WriteLine("1. Yes, use the knife.");
-                Console.WriteLine("2. No, try to run away.");
-                Console.Write("Make your choice (1-2): ");
-                string choice3 = Console.ReadLine();
-
-                if (choice3 == "1")
-                {
-                    Console.WriteLine($"You neutralize the killer and manage to escape. Congratulations, {playerName}!");
-                }
-                else
-                {
-                    Console.WriteLine($"You try to escape, but the killer catches you. This is your end, {playerName}...");
-                }
-            }
-            else
-            {
-                Console.WriteLine($"You drop the knife, and there isn't much time left to search, {playerName}. The killer finds you. This is your end...");
-            }
+            Console.WriteLine($"You encounter the killer, {playerName}. You use the knife, but you can’t muster the courage to kill, so you fail to escape.");
+        }
+        else if (choice1 == "yes" && choice4 == "yes")
+        {
+            Console.WriteLine($"The killer chases you, {playerName}. You try to run, but without anything to defend yourself, you get caught.");
+        }
+        else if (choice2 == "yes" && choice3 == "yes")
+        {
+            Console.WriteLine($"You search the room, {playerName}. You find a knife, and as the killer opens the door and tells their partner to lock it behind them, you neutralize the killer! Afterward, you quietly slip out of the room using the spare key you found inside.");
+        }
+        else if (choice3 == "yes")
+        {
+            Console.WriteLine($"You search the room, {playerName}. You find a knife, and as the killer opens the door and tells their partner to lock it behind them, you neutralize the killer! However, you’re still trapped in the room.");
+        }
+        else if (choice4 == "yes")
+        {
+            Console.WriteLine($"You try to escape, {playerName}, but your desire to run alone isn’t enough to save you. The killer catches you...");
         }
         else
         {
-            Console.WriteLine($"You stay in bed and wait quietly, {playerName}. However, the killer finds you. This is your end...");
+            Console.WriteLine($"You do nothing, {playerName}. The killer enters the room, and your end has come...");
         }
 
-        Console.WriteLine($"Game over. Thank you, {playerName}!");
+        Console.WriteLine($"Game over. Thanks you {playerName}!");
     }
 }
+
 
 // I got help from ChatGPT while doing the project sir.
