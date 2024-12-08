@@ -1,0 +1,6 @@
+C:\Users\ahmet\Documents\DGD-Assignment\DGD203-AhmetBakirkaya-Midterm\DGD203---AhmetbBak-rkaya---Midterm\MidtermQuestions\bin\Debug\MidtermQuestions.exe
+C:\Users\ahmet\Documents\DGD-Assignment\DGD203-AhmetBakirkaya-Midterm\DGD203---AhmetbBak-rkaya---Midterm\MidtermQuestions\bin\Debug\MidtermQuestions.pdb
+C:\Users\ahmet\Documents\DGD-Assignment\DGD203-AhmetBakirkaya-Midterm\DGD203---AhmetbBak-rkaya---Midterm\MidtermQuestions\obj\Debug\MidtermQuestions.csproj.AssemblyReference.cache
+C:\Users\ahmet\Documents\DGD-Assignment\DGD203-AhmetBakirkaya-Midterm\DGD203---AhmetbBak-rkaya---Midterm\MidtermQuestions\obj\Debug\MidtermQuestions.csproj.CoreCompileInputs.cache
+C:\Users\ahmet\Documents\DGD-Assignment\DGD203-AhmetBakirkaya-Midterm\DGD203---AhmetbBak-rkaya---Midterm\MidtermQuestions\obj\Debug\MidtermQuestions.exe
+C:\Users\ahmet\Documents\DGD-Assignment\DGD203-AhmetBakirkaya-Midterm\DGD203---AhmetbBak-rkaya---Midterm\MidtermQuestions\obj\Debug\MidtermQuestions.pdb
