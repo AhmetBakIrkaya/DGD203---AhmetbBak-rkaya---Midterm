@@ -8,7 +8,6 @@ class Program
         string playerName = Console.ReadLine();
         Console.WriteLine($"Hello, {playerName}! You open your eyes. The last thing you remember is being knocked unconscious by a blow to your head from a large man. You are in a dark room and hear sounds...");
         Console.WriteLine("What will you do?\n");
-
         Console.WriteLine("1. Head towards the door.");
         Console.WriteLine("2. Search the room.");
         Console.WriteLine("3. Stay in bed and wait quietly.");
@@ -83,3 +82,5 @@ class Program
         Console.WriteLine($"Game over. Thank you, {playerName}!");
     }
 }
+
+// I got help from ChatGPT while doing the project sir.
