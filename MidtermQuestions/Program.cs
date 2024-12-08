@@ -80,6 +80,6 @@ class Program
             Console.WriteLine($"You stay in bed and wait quietly, {playerName}. However, the killer finds you. This is your end...");
         }
 
-        Console.WriteLine($"Game over. Thank you, {playerName}!");
+        Console.WriteLine($"Game over. Thank you, {playerName}!");xx
     }
 }
